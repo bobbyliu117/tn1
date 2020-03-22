@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node ./src/main.ts",
+    "dev:build": "tsc -w",
+    "dev:watch": "nodemon node build/main.js",
+    "dev": "concurrently npm:dev:*",
     "test": "node src/test1.js"
   },
   "repository": {
@@ -27,7 +29,13 @@
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.16",
-    "ts-node": "^8.7.0",
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2",
     "typescript": "^3.8.3"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "local/*"
+    ]
   }
 }
