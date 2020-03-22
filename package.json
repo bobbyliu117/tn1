@@ -1,0 +1,33 @@
+{
+  "name": "tn1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./src/main.ts",
+    "test": "node src/test1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobbyliu117/tn1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobbyliu117/tn1/issues"
+  },
+  "homepage": "https://github.com/bobbyliu117/tn1#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "request-x-ray": "^0.1.4",
+    "x-ray": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.16",
+    "ts-node": "^8.7.0",
+    "typescript": "^3.8.3"
+  }
+}
