@@ -28,10 +28,9 @@ export class Crawler {
       }
       const html = cherrio.load(content);
       if(html('body').eq(0).text() === "Please verify you're a human to continue.") {
-        console.log('You are EXPOSED!');
-        break;
+        throw Error('You are EXPOSED!');
       }
-      p.parse(html)
+      p.parse(html);
       console.log('done: ', p.url);
     }
   }
